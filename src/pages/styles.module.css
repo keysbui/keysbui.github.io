@@ -1,0 +1,114 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.heroBanner {
+  background-color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-color-secondary-lightest);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.6rem 1.2rem;
+}
+
+.heroBannerWrapper {
+  min-height: 1024px;
+  text-align: center;
+}
+
+.heroBanner h2 {
+  font-size: 80px !important;
+  line-height: 5.4rem;
+  font-weight: 600;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.keysbui {
+  background: linear-gradient(90deg, #f12711, #f5af19, #f5af19, #f12711);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 500;
+  color: transparent;
+}
+
+.heroBanner p {
+  font-size: 20px;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 0 4px;
+
+  /* max-width: 512px; */
+}
+
+.aboutHeader {
+  background-color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-color-secondary-lighter);
+  padding: 3.6rem 0 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.aboutHeader h2 {
+  display: inline-block;
+  padding-bottom: 6px;
+}
+
+.about {
+  background-color: var(--ifm-color-secondary-lightest);
+  color: var(--ifm-color-secondary-darker);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 3.6rem 1.2rem;
+}
+
+.aboutProfilePic {
+  -webkit-mask-image: url('/img/mark-avatar.svg');
+  mask-image: url('/img/mark-avatar.svg');
+  -webkit-mask-size: auto;
+  mask-size: auto;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  max-height: 450px;
+  max-width: 450px;
+}
+
+.aboutText {
+  max-width: 512px;
+}
+
+.aboutText a {
+  font-weight: bold;
+}
+
+.directory {
+  background-color: var(--ifm-color-secondary-darker);
+  color: var(--ifm-color-secondary-lightest);
+  padding: 3.6rem 0.4rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 966px) {
+  .about {
+    flex-direction: column;
+  }
+}
